@@ -4,6 +4,15 @@
 
 
 // YOUR CODE GOES HERE
+function Start()
+    {
+        console.log("App Started...");
+
+      
+       
+    }
+
+    window.addEventListener("load", Start);
 
 
 })();
