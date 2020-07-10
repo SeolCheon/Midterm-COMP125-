@@ -10,6 +10,7 @@
 
 // YOUR CODE GOES HERE
 
+//function for adding intro paragraph 
 function addParagraphsToFirstPhoto() {  
     //get element by id and let it be firstPhoto     
     let firstPhoto = document.getElementById("IntroParagraph")
@@ -32,7 +33,7 @@ function addParagraphsToFirstPhoto() {
         return true;
     }return false;    
 }
-
+//function for adding a paragraph to Folegandros picture
 function addParagraphsToSecondPhoto() {     
     //get element by id and let it be secondPhoto  
     let secondPhoto = document.getElementById("Folegandros")
@@ -51,7 +52,7 @@ function addParagraphsToSecondPhoto() {
         return true;
     }return false; 
 }
-
+//function for adding a paragraph to Alonissos picture
 function addParagraphsToThirdPhoto() { 
     //get element by id and let it be thirdPhoto     
     let thirdPhoto = document.getElementById("Alonissos")
@@ -70,7 +71,7 @@ function addParagraphsToThirdPhoto() {
         return true;
     }return false; 
 }
-
+//function for adding a paragraph to Spetses picture
 function addParagraphsToFourthPhoto() {   
     //get element by id and let it be fourthPhoto    
     let fourthPhoto = document.getElementById("Spetses")
@@ -89,7 +90,7 @@ function addParagraphsToFourthPhoto() {
         return true;
     }return false; 
 }
-
+//function for adding a paragraph to Amorgos picture
 function addParagraphsToFifthPhoto() {    
     //get element by id and let it be fifthPhoto   
     let fifthPhoto = document.getElementById("Amorgos")
@@ -108,7 +109,7 @@ function addParagraphsToFifthPhoto() {
         return true;
     }return false; 
 }
-
+//function for adding a paragraph to Syros picture
 function addParagraphsToSixthPhoto() {  
     //get element by id and let it be sixthPhoto     
     let sixthPhoto = document.getElementById("Syros")
@@ -127,7 +128,7 @@ function addParagraphsToSixthPhoto() {
         return true;
     }return false; 
 }
-
+//function for adding a paragraph to Milos picture
 function addParagraphsToSeventhPhoto() {   
     //get element by id and let it be seventhPhoto    
     let seventhPhoto = document.getElementById("Milos")
@@ -146,7 +147,7 @@ function addParagraphsToSeventhPhoto() {
         return true;
     }return false; 
 }
-
+//function for adding a paragraph to Hydra picture
 function addParagraphsToEighthPhoto() {      
     //get element by id and let it be eighthPhoto
     let eighthPhoto = document.getElementById("Hydra")
@@ -165,7 +166,7 @@ function addParagraphsToEighthPhoto() {
         return true;
     }return false; 
 }
-
+//function for adding a paragraph to Ithaca picture
 function addParagraphsToNinethPhoto() { 
     //get element by id and let it be ninethPhoto     
     let ninethPhoto = document.getElementById("Ithaca")
@@ -184,7 +185,7 @@ function addParagraphsToNinethPhoto() {
         return true;
     }return false; 
 }
-
+//function for adding a paragraph to Gavdos picture
 function addParagraphsToTenthPhoto() {  
     //get element by id and let it be tenthPhoto    
     let tenthPhoto = document.getElementById("Gavdos")
@@ -203,7 +204,7 @@ function addParagraphsToTenthPhoto() {
         return true;
     }return false; 
 }
-
+//function for ouputting variables in contact form to console.
 function OutputVariables()
     {   
         //let forms be contact1     
@@ -248,6 +249,7 @@ function OutputVariables()
         return false;     
 }
 
+//(bonus) function for validating form
 function validateForm()
 {
     //let form be contactForm
@@ -333,7 +335,7 @@ function validateForm()
 
 }
 
-
+//function for implementing functions when page loaded
 function Start()   
     {
         console.log("App Started...");  //display this in console
