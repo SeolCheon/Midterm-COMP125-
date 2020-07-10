@@ -248,21 +248,107 @@ function OutputVariables()
         return false;     
 }
 
-
-function Start()
+function validateForm()
+{
+    //let form be contactForm
+    let contactForm =document.forms;
+    if(contactForm)//if contactFrom exists
     {
-        console.log("App Started...");
-        addParagraphsToFirstPhoto();
-        addParagraphsToSecondPhoto();
-        addParagraphsToThirdPhoto();
-        addParagraphsToFourthPhoto();
-        addParagraphsToFifthPhoto();
-        addParagraphsToSixthPhoto();
-        addParagraphsToSeventhPhoto();
-        addParagraphsToEighthPhoto();
-        addParagraphsToNinethPhoto();
-        addParagraphsToTenthPhoto();
-        OutputVariables(); 
+        //get element by id 'firstName' and let it be firstNameValidate
+        let firstNameValidate =document.getElementById("firstName");
+        firstNameValidate.addEventListener("blur",(event)=>  //when the firstNameValidate has lost focus
+        {
+            if(firstNameValidate.value.length <2)    //if the input length of firstName is less than 2
+            {
+                firstNameValidate.focus();    //make it get focus             
+                console.log(`your first name length is too short.`);//display this in console
+            }
+            else //if not
+            {
+                console.log(`your first name is saved`); //display this in console.
+            }
+        });   
+
+        //get element by id 'lastName' and let it be lastNameValidate
+        let lastNameValidate =document.getElementById("lastName");
+        lastNameValidate.addEventListener("blur",(event)=> //when the lastNameValidate has lost focus
+        {
+            if(lastNameValidate.value.length <2) //if the input length of lastName is less than 2
+            {
+                lastNameValidate.focus();      //make it get focus           
+                console.log(`your last name length is too short.`);//display this in console
+            }
+            else//if not
+            {
+                console.log(`your last name is saved`);//display this in console
+            }
+        });
+
+        //get element by id 'contactNumber' and let it be contactNumberValidate
+        let contactNumberValidate =document.getElementById("contactNumber");
+        contactNumberValidate.addEventListener("blur",(event)=> //when the contactNumberValidate has lost focus
+        {
+            if(contactNumberValidate.value.length <10) //if the input length of contact number is less than 10
+            {
+                contactNumberValidate.focus();      //make it get focus           
+                console.log(`your contact number length is less than 10.`); //display this in console
+            }
+            else //if not
+            {
+                console.log(`your contact number is saved`); //display this in console
+            }
+        });
+        //get element by id 'emailName' and let it be emailAddressValidate
+        let emailAddressValidate =document.getElementById("email");
+        emailAddressValidate.addEventListener("blur",(event)=>   //when the emailAddressValidate has lost focus
+        {
+            if(emailAddressValidate.value.length <=0)  //if the user didn't put email address
+            {
+                emailAddressValidate.focus();     //make it get focus               
+                console.log(`please enter your email address`);   //display this in console
+            }
+            else //if the user put email address
+            {
+                console.log(`your email address is saved`);    //display this in console
+            }
+        });
+        //get element by id 'yourMessage' and let it be yourMessageValidate
+        let yourMessageValidate =document.getElementById("yourMessage");
+        yourMessageValidate.addEventListener("blur",(event)=>     //when the yourMessageValidate has lost focus
+        {
+            if(yourMessageValidate.value.length >50)        //if length of message is more than 50
+            {
+                yourMessageValidate.focus();           //make it get focus     
+                console.log(`your message is too long. please write less than 50 letters`); //display this in console
+            }
+            else //if not
+            {
+                console.log(`your message is saved`);   //display this in console
+            }
+        });
+
+
+
+    }
+
+}
+
+
+function Start()   //when page started
+    {
+        console.log("App Started...");  //display this in console
+        addParagraphsToFirstPhoto();    //implement addParagraphsToFirstPhoto function 
+        addParagraphsToSecondPhoto();   //implement addParagraphsToSecondPhoto function
+        addParagraphsToThirdPhoto();    //implement addParagraphsToThirdPhoto function
+        addParagraphsToFourthPhoto();   //implement addParagraphsToFourthPhoto function
+        addParagraphsToFifthPhoto();    //implement addParagraphsToFifthPhoto function
+        addParagraphsToSixthPhoto();    //implement addParagraphsToSixthPhoto function
+        addParagraphsToSeventhPhoto();  //implement addParagraphsToSeventhPhoto function
+        addParagraphsToEighthPhoto();   //implement addParagraphsToEighthPhoto function
+        addParagraphsToNinethPhoto();   //implement addParagraphsToNinethPhoto function
+        addParagraphsToTenthPhoto();    //implement addParagraphsToTenthPhoto function
+        OutputVariables();              //implement OutputVariables function
+        validateForm();                 //implement validateForm fuction
        
     }
 
