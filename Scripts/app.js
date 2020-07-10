@@ -7,7 +7,6 @@
 (function () {
 "use strict";
 
-
 // YOUR CODE GOES HERE
 
 //function for adding intro paragraph 
