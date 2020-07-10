@@ -12,9 +12,11 @@
 
 function addParagraphsToFirstPhoto() {        
     let firstPhoto = document.getElementById("IntroParagraph")
-    if (firstPhoto) //if jumbotron exists
+    if (firstPhoto) //if firstPhoto exists
     {
-        let firstParagraph = document.createElement("p");            
+        //create paragraph
+        let firstParagraph = document.createElement("p");  
+        //configure paragraph          
         firstParagraph.innerText =
             `    
             Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals. 
@@ -24,7 +26,7 @@ function addParagraphsToFirstPhoto() {
             And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too.      
 
             `; 
-        //attach new div
+        //attach new paragraph
         firstPhoto.appendChild(firstParagraph);
         return true;
     }return false;    
