@@ -1,4 +1,9 @@
 // setup your IIFE (Immediately Invoked Function Expression)
+/*File name : app.js
+  Author's name : Seol Cheon
+  Web site name : COMP125-MIDTERM
+  file description: a text file containin JavaScript code that is used to add paragraphs and 
+  show inputs of variables in contact from in the console as a outputs */
 (function () {
 "use strict";
 
@@ -169,6 +174,37 @@ function addParagraphsToTenthPhoto() {
     }return false; 
 }
 
+function OutputVariables()
+    {        
+        let contact1 = document.forms;
+        if(contact1)
+        {
+        let sendButton =document.getElementById("sendButton")        
+        sendButton.addEventListener("click",(event) =>
+        {   //prevent it from submitting when you click
+        let firstNameInput = document.getElementById('firstName');
+        console.log(`your first name is: `,firstNameInput.value);
+
+        let lastNameInput = document.getElementById('lastName');
+        console.log(`your last name is: `,lastNameInput.value);
+
+        let contactNumberInput = document.getElementById('contactNumber');
+        console.log(`your contact number is: `,contactNumberInput.value);
+
+        let emailAddressInput = document.getElementById('email');
+        console.log(`your email address is: `,emailAddressInput.value); 
+
+        let yourMessageInput = document.getElementById('yourMessage');
+        console.log(`you Message is: `,yourMessageInput.value); 
+                        
+        event.preventDefault();
+        })
+        return true; 
+        }      
+        return false;     
+}
+
+
 function Start()
     {
         console.log("App Started...");
@@ -182,12 +218,7 @@ function Start()
         addParagraphsToEighthPhoto();
         addParagraphsToNinethPhoto();
         addParagraphsToTenthPhoto();
-       
-
-
-
-
-      
+        OutputVariables(); 
        
     }
 
