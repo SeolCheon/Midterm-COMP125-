@@ -334,7 +334,7 @@ function validateForm()
 }
 
 
-function Start()   //when page started
+function Start()   
     {
         console.log("App Started...");  //display this in console
         addParagraphsToFirstPhoto();    //implement addParagraphsToFirstPhoto function 
@@ -352,7 +352,7 @@ function Start()   //when page started
        
     }
 
-    window.addEventListener("load", Start);
+    window.addEventListener("load", Start); //when page is loaded, emplement Start function
 
 
 })();
